@@ -1,0 +1,10 @@
+si Belle_ville == Vrai & Trés_bons_restaurants == Vrai alors Ville_méritant_le voyage = Vrai
+si Ville_historique == Vrai alors Ville_méritant_le_voyage = Vrai
+si Autochtones_accueillants == Vrai & Traditions_folkloriques  == Vrai alors Ville_méritant_le_voyage = Vrai
+si Monuments == Vrai & Végétation_abondante == Vrai alors Belle_ville = Vrai
+si Tradition_culinaire == Vrai alors Trés_Bons_restaurants = Vrai
+si Restaurants_3_étoiles == Vrai alors Trés_bons_restaurants = Vrai
+si Restaurants_3_toques == Vrai alors Trés_bons_restaurants = Vrai
+si Musées == Vrai & Ville_ancienne == Vrai alors Ville_historique = Vrai
+si Provence == Vrai & Bord_de_mer == Vrai alors Autochtones_accueillants = Vrai
+si Parcs_verdoyants == Vrai & Avenues_larges == Vrai alors Végétation_abondante = Vrai

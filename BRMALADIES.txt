@@ -1,0 +1,8 @@
+si Douleur == Abdomen & Vomissements == Faux alors Appendicite = Vrai
+si Douleur == Abdomen & Vomissements == Vrai alors Intoxication_alimentaire = Vrai
+si Douleur == Abdomen & Sexe == Femme alors Dysménorrhée = Vrai
+si Douleur == Gorge & Fiévre == Vrai alors Rhume = Vrai
+si Douleur == Poitrine alors Infarctus = Vrai
+si Douleur == Gorge & Fiévre == Faux alors Mal_de_gorge = Vrai
+si Toux == Vrai & Fiévre == Vrai & Douleur == Aucun alors Rhume = Vrai
+si Douleur == Aucun & Toux == Vrai & Fiévre == Faux alors Refroidissement = Vrai
