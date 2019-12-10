@@ -80,6 +80,9 @@ def match(regle,baseFait):
 
 def satBF (baseFait, baseRegle):
     changement = True
+    fichier = open("logs.txt", "a")
+    fichier.write("\nTraceur")
+    fichier.write("\n-------------------------------------\n")
     while changement:
         changement = False
         for regle in baseRegle:
@@ -95,16 +98,12 @@ def satBF (baseFait, baseRegle):
                         baseFait[l[0]] = False
                     else:
                         baseFait[l[0]] = l[1][1:-1]
-
+                fichier.write(str(regle))
                 baseRegle.remove(regle)
                 changement = True
+    fichier.close()
     return baseFait,baseRegle
 
-
-bf=createBF(file_BFVILLE)
-br=createBR(file_BRVILLE)
-(x,y)=satBF(bf,br)
-print(x)
 
 
 
